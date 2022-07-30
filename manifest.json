@@ -1,0 +1,30 @@
+{
+    "name": "BlackOut",
+    "description": "BlackOut is an extension that allows you to use dark mode on any website with a single click.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions":[
+        "contextMenus",
+        "background",
+        "scripting", 
+        "activeTab",
+        "storage",
+        "tabs"
+    ],
+    "host_permissions": [
+        "*://*/*",
+        "<all_urls>"
+    ],
+    "icons":{
+        "16": "images/16.png",
+        "48": "images/48.png",
+        "128": "images/128.png"
+    },
+    "action": {
+        "default_locale": "en",
+        "default_popup": "popup.html"
+    }
+}
